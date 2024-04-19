@@ -1,0 +1,27 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jetpack-io/devbox/0.10.3/.schema/devbox.schema.json",
+  "packages": [
+    "direnv@latest",
+    "teller@latest",
+    "go-task@latest",
+    "yq@latest",
+    "jq@latest",
+    "awscli2@latest",
+    "zsh-prezto@latest",
+    "micromamba@latest",
+    "python@3.10",
+    "gh@latest"
+  ],
+  "shell": {
+    "init_hook": [
+      "typeset -g POWERLEVEL9K_INSTANT_PROMPT=off",
+      "source .devbox/nix/profile/default/share/zsh-prezto/init.zsh",
+      "echo 'Welcome to devbox!'"
+    ],
+    "scripts": {
+      "test": [
+        "echo \"Error: no test specified\" && exit 1"
+      ]
+    }
+  }
+}

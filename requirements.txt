@@ -1,0 +1,4 @@
+diagrams
+pillow
+ipython
+jupyter
